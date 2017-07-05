@@ -30,10 +30,17 @@ module.exports = {
       'vue': 'never'
     }],
     // allow optionalDependencies
-    'import/no-extraneous-dependencies': ['error', {
-      'optionalDependencies': ['test/unit/index.js']
-    }],
+    'import/no-extraneous-dependencies': 0,
+    'import/no-unresolved': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': 0, //process.env.NODE_ENV === 'production' ? 2 : 0,
+    'linebreak-style': 0, //换行风格由git自动改变 不需要eslint关心
+    'no-console': 0, // process.env.NODE_ENV === 'production' ? 2 : 0,
+    'no-extend-native': ['error', { 'exceptions': ['Date'] }],
+    'no-shadow': 0,
+    'newline-per-chained-call': 0,
+    'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
+    'no-mixed-operators': ['error', { 'allowSamePrecedence': true }],
+    'yoda': ["error", "never", { "exceptRange": true }],
   }
 }
