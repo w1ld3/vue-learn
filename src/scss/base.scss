@@ -1,0 +1,27 @@
+$color-primary: #59a9f8;
+$color-rice-white: #f3faff;
+$color-blue-grey: #89a7ce;
+$color-warn: #f69743;
+$color-danger: #fa6836;
+$color-primary-black: #333;
+$color-second-black: #666;
+$color-grey: #999;
+$color-green: #8cc951;
+$color-disabled: #ececec;
+$color-background: #f6f6f6;
+$color-background-selected: #fafafa;
+$color-white: #fff;
+$color-black: #000;
+$color-divide-line: #eee;
+$divide-line-style: solid #eee 1px;
+$color-mask-50: rgba(0, 0, 0, 0.5);
+$color-mask-80: rgba(0, 0, 0, 0.8);
+$color-second-grey: #ccc;
+
+@mixin clear-float {
+  &::after {
+    display: block;
+    content: ' ';
+    clear: both;
+  }
+}
