@@ -24,8 +24,12 @@ export default {
 .cell{
   display: flex;
   align-items: center;
+  font-size: $normal-size;
+  line-height: 1.47058824;
+  margin: 10px 15px;
   .cell__hd{
-
+    flex: 1;
   }
+  
 }
 </style>
